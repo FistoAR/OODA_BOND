@@ -1,3 +1,4 @@
+
 gsap.registerPlugin(MotionPathPlugin, ScrollTrigger, ScrollSmoother);
 
 ScrollSmoother.create({
@@ -111,11 +112,11 @@ const scrollWordTimeline = gsap.timeline({
         const next = document.querySelector(".word-next");
 
         next.textContent = words[currentIndex];
-        const h1 = Math.floor(Math.random() * 360);
-        const h2 = (h1 + 60) % 360;
-        const gradient = `linear-gradient(to right, hsl(${h1}, 70%, 35%), hsl(${h2}, 70%, 40%))`;
-        next.classList.add("gradient-text");
-        next.style.backgroundImage = gradient;
+        // const h1 = Math.floor(Math.random() * 360);
+        // const h2 = (h1 + 60) % 360;
+        // const gradient = `linear-gradient(to right, hsl(${h1}, 70%, 35%), hsl(${h2}, 70%, 40%))`;
+        // next.classList.add("gradient-text");
+        // next.style.backgroundImage = gradient;
 
         gsap.set(next, { y: "100%", opacity: 0 });
 
